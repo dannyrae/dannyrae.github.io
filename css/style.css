@@ -1,3 +1,6 @@
+/* ----- Google fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 /* ----- Resetting all default styles ----- */
@@ -8,24 +11,23 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
+}
+
+body{
     font-family: 'Poppins', sans-serif;
 }
 
 /* ----- Header Styles ----- */
 
 header{
-/*     background-image: url('../images/lady-dev.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background: #252934;
-    height: 650px;
+    background-color: #252934;
+    height: 900px;
     max-height: 100vh;
 }
 
 /* ----- Navigation starts here ----- */
 
 nav{
-/*     background-color: white; */
     padding: 1.5rem 8rem;
     display: flex;
     justify-content: space-between;
@@ -33,9 +35,11 @@ nav{
 }
 
 .logo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Irish Grover', cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
     cursor: pointer;
-  color: #fff;
+    color: #fff;
 }
 
 .logo span{
@@ -49,7 +53,10 @@ ul{
 ul li a{
     color: #fff;
     padding-bottom: 8px;
-    transition: border 1s ;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
 }
 
 ul li a:hover{
@@ -67,6 +74,7 @@ ul li a:hover{
     top: 50%;
     left: 12%;
     transform: translateY(-50%) ;
+    font-size: 1.5rem;
 }
 .dev h1:not(:nth-child(1)){
     margin: 10px 0;
@@ -243,15 +251,14 @@ header button{
     font-weight: 500;
 }
 
-button{
-    font-size: 13px;
-    font-weight: 600;
-    padding: .8em 2em;
-    background-color: transparent;
-    border: 2px solid grey;
-    word-spacing: 2px;
+.about_text .icons{
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.about_text .icons i{
+    color: black;
+}
 
 /* ----- About me ends here ----- */
 
@@ -308,7 +315,15 @@ footer{
 }
 
 .icons i:hover{
-    color: grey;
+    color: #e31b6d;
     cursor: pointer;
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 70em){
+    
+}
+
+@media screen and (max-width: 70em){
+
 }
