@@ -28,7 +28,7 @@ header{
 /* ----- Navigation starts here ----- */
 
 nav{
-    padding: 1.5rem 8rem;
+    padding: 1.1rem 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,12 +48,13 @@ nav{
 
 ul{
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 ul li a{
     color: #fff;
     padding-bottom: 8px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     transition: all .4s ease-in-out;
@@ -215,16 +216,15 @@ header button{
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 25%;
-    margin: 2.2em 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2em 10em;
+    padding: 5em 2em;
 }
 
 .about_image{
     width: 400px;
-    height: 500px;
+    height: 450px;
     background-image: url(../images/smiling-me.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,7 +236,7 @@ header button{
     font-size: 1.1em;
     line-height: 1.9em;
     width: 500px;
-    height: 500px;
+    height: 450px;
     border: 1px solid grey;
     border-right: none;
     border-left: none;
@@ -285,15 +285,35 @@ header button{
     width: 80%;
 }
 
+.btn{
+    transition: all .4s ease-in-out;
+    background-color: transparent;
+    border: 1px solid #252934;
+}
+
+.btn a{
+    color: black;
+}
+
+.btn:hover a{
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #252934;
+    border: none;
+}
+
 /* ----- Footer style starts here */
 footer{
     background-color: #252934;
     color: white;
-    padding: 2em;
+    padding: 2em 11em;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 18em;
+    flex-direction: row-reverse;
+    /* gap: 18em; */
 }
 
 .disp{
@@ -321,9 +341,134 @@ footer{
 }
 
 @media screen and (max-width: 70em){
+    nav{
+        padding: 1.1rem 5rem;
+    }
     
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    ul{
+        gap: 30px;
+    }
+
+    ul li a{
+        font-size: .9rem;
+    }
+
+    .dev{
+        font-size: 1.2rem;
+    }
+
+    .about_me{
+        padding: 7em 2em;
+        gap: 3em;
+    }
+    
+    .about_image{
+        width: 300px;
+        height: 350px;
+    }
+    
+    .about_text{
+        font-size: .9em;
+        line-height: 1.8em;
+        width: 400px;
+        height: 350px;
+    }
+
+    .project_collabo{
+        grid-template-columns: 1.5fr 2.5fr 1fr;
+        gap: 1em;
+        padding: 5em 2.5em;
+    }
+    
+    .project_collabo h2{
+        font-size: 1.2em;
+    }
+
+    footer{
+        padding: 2em 2.5em;
+        font-size: .9em;
+    }
 }
 
-@media screen and (max-width: 70em){
+@media screen and (max-width: 40em){
+    nav{
+        padding: 1rem 2rem;
+    }
 
-}
+    .logo{
+        font-size: 1rem;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .dev{
+        font-size: .8rem;
+    }
+
+    header button{
+        padding: 8px;
+        width: 7rem;
+        font-size: .7rem;
+    }
+
+    .about_me{
+        flex-direction: column;
+        padding: 3em .5em;
+        gap: 2em;
+    }
+
+    .about_image{
+        width: 270px;
+        height: 250px;
+    }
+    
+    .about_text{
+        font-size: .8em;
+        line-height: 1.5em;
+        width: 270px;
+        height: 300px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .project_collabo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 2em;
+    }
+    
+    .project_collabo h2{
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .btn{
+        padding: .5rem 1.2rem;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2em;
+        padding: 2em 2.5em 1em;
+        font-size: .8em;
+        text-align: left;
+    }
+
+    footer .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+} 
