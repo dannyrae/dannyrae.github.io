@@ -313,7 +313,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    /* gap: 18em; */
 }
 
 .disp{
@@ -431,8 +430,8 @@ footer{
     .about_text{
         font-size: .8em;
         line-height: 1.5em;
-        width: 270px;
-        height: 300px;
+        width: 85%;
+        height: 320px;
     }
 
     .line{
