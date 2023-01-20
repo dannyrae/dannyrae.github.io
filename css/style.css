@@ -444,6 +444,7 @@ footer{
     .open,
     .close{
         display: initial;
+        cursor: pointer;
         color: white;
         font-weight: 700;
         font-family: 'Inter', sans-serif;
