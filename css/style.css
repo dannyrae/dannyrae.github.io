@@ -485,18 +485,6 @@ footer{
 }
 
 @media screen and (max-width: 40em){
-    .loader.load{
-        font-size: .5rem;
-    }
-
-    body.preload{
-        letter-spacing: .4rem;
-    }
-
-    .loader.load img{
-        width: 250px;
-    }
-
     nav{
         padding: 1rem 2rem;
     }
@@ -588,11 +576,21 @@ footer{
 
     .project__card{
         width: 320px;
-        height: 300px;
+        height: 320px;
         background-color: #fff;
         border: 1px solid #252934;
-        font-size: .7rem;
+        font-size: .6rem;
         text-align: left;
+    }
+
+    .project__card P{
+        font-size: 12px;
+    }
+    
+    .project__card span{
+        top: 4%;
+        padding: .1rem .4rem;
+        font-size: 11px;
     }
 
     .project_collabo{
