@@ -464,6 +464,18 @@ footer{
 }
 
 @media screen and (max-width: 40em){
+    .loader.load{
+        font-size: .5rem;
+    }
+
+    body.preload{
+        letter-spacing: .4rem;
+    }
+
+    .loader.load img{
+        width: 250px;
+    }
+
     nav{
         padding: 1rem 2rem;
     }

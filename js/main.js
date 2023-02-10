@@ -2,7 +2,7 @@ const open = document.querySelector('.open')
 const close = document.querySelector('.close')
 const ul = document.querySelector('ul')
 const body = document.querySelector('body')
- 
+
 
 open.addEventListener('click', () => {
     ul.classList.add('show')
