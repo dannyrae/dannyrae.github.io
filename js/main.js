@@ -6,10 +6,10 @@ const body = document.querySelector('body')
 
 open.addEventListener('click', () => {
     ul.classList.add('show')
-    body.style.overflowY = 'hidden'
+    // body.style.overflowY = 'hidden'
 })
 
 close.addEventListener('click', () => {
     ul.classList.remove('show')
-    body.style.overflowY = 'auto'
+    // body.style.overflowY = 'auto'
 })
